@@ -19,6 +19,7 @@ jobs:
       with:
         test-name: JTest
         setup-command: sudo apt-get update && sudo apt-get install -y default-jdk
+          && chmod +x run.sh
         command: "./run.sh"
         input: ''
         expected-output: Hello World
